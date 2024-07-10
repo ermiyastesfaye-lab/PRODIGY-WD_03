@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(images/background3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #9900ff, 0 0 20px #9900ff, 0 0 25px #9900ff,
+    0 0 20px #9900ff;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #8d0291;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.btn {
+  padding: 1.4rem 3rem;
+  background-color: #5de5ec;
+  box-shadow: 0 0 10px #5de5ec, 0 0 20px #5de5ec, 0 0 25px #5de5ec,
+    0 0 20px #5de5ec;
+  border: 6px solid white;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  background-color: #9ff8fd;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.bi {
+  color: white;
+  font-size: 3rem;
+}
+
+.bi-trophy-fill {
+  color: gold;
+}
+#turn {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+#turn::before {
+  box-shadow: 0 0 10px #5de5ec, 0 0 20px #5de5ec, 0 0 25px #5de5ec,
+    0 0 20px #5de5ec;
+}
+
+.x::before {
+  content: "X";
+  color: red;
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red;
+  font-size: 4rem;
+}
+
+.o::before {
+  content: "O";
+  color: blue;
+  text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 40px blue, 0 0 80px blue;
+  font-size: 5rem;
+}
